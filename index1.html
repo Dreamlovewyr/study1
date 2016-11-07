@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>旋转木马幻灯片制作</title>
+    <link rel="stylesheet" type="text/css" href="carousel.css">
+</head>
+<body style="padding:30px">
+
+    <div class="J-Poster poster-main" data-setting='{
+                                "width":1000,
+                                "height":270,
+                                "posterWidth":540,
+                                "posterHeight":270,
+                                "scale":0.8,
+                                "autoplay":true,
+                                "delay":2000,
+                                "speed":500,
+                                "verticalAlign":"middle"
+    }'>
+    	<div class="poster-btn poster-pre-btn"></div>
+    	<ul class="poster-list">
+    		<li class="poster-item"><a href="#"><img src="图片素材/1.jpg" width="100%"></a></li>
+    		<li class="poster-item"><a href="#"><img src="图片素材/2.jpg" width="100%"></a></li>
+    		<li class="poster-item"><a href="#"><img src="图片素材/3.jpg" width="100%"></a></li>
+    		<li class="poster-item"><a href="#"><img src="图片素材/4.jpg" width="100%"></a></li>
+    		<li class="poster-item"><a href="#"><img src="图片素材/5.jpg" width="100%"></a></li>
+            <li class="poster-item"><a href="#"><img src="图片素材/2.jpg" width="100%"></a></li>
+            <li class="poster-item"><a href="#"><img src="图片素材/3.jpg" width="100%"></a></li>
+            <li class="poster-item"><a href="#"><img src="图片素材/4.jpg" width="100%"></a></li>
+            <li class="poster-item"><a href="#"><img src="图片素材/5.jpg" width="100%"></a></li>
+    	</ul>
+    	<div class="poster-btn poster-next-btn"></div>
+    </div>
+
+    <script type="text/javascript" src='旋转木马/jquery.js'></script>
+    <script type="text/javascript" src='carousel.js'></script>
+    <script type="text/javascript">
+    	$(function(){
+
+    	//Carousel
+    	//var carousel=new Carousel($('J-Poster').eq(0));
+
+          Carousel.init($('.J-Poster'));
+    	})
+    </script>
+</body>
+</html>
